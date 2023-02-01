@@ -25,9 +25,9 @@ int main() {
 
 		for (int i = 0; i < n-1; ++i) {
 			int ni = i + 1;
-			dp[1][ni] = max(dp[0][i] + Map[1][ni], dp[2][i] + Map[1][ni]);
+			dp[1][ni] = max(dp[0][i] + Map[1][ni], dp[2][i] + Map[1][ni]); // dp[어디가 숫자가 들어있는지][배열에 n번째] 1 : 2행에 0일때는 1행에 2일때는 둘다 공백
 			dp[0][ni] = max(dp[1][i] + Map[0][ni], dp[2][i] + Map[0][ni]);
-			dp[2][ni] = max(dp[0][i], dp[1][i]);
+			dp[2][ni] = max(dp[0][i], dp[1][i]); 
 		}
 
 		cout << max(dp[1][n-1], dp[0][n-1]) << endl;

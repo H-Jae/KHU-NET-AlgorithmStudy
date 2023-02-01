@@ -8,17 +8,17 @@ using namespace std;
 constexpr int Size = 5 * 1e2;
 int M, N;
 
-int dx[] = { 1,-1,0,0 };
-int dy[] = { 0,0,1,-1 };
+int dx[] = { 1,-1,0,0 }; 
+int dy[] = { 0,0,1,-1 };  
 
 int Map[Size + 5][Size + 5];
 int dp[Size + 5][Size + 5];
 
 int solve(int cx, int cy) {
-	if (cx == M && cy == N) return 1;
+	if (cx == M && cy == N) return 1; // M , N -> 도착지에 가면 리턴해준다
 
-	if (dp[cx][cy] != -1) return dp[cx][cy];
-	else dp[cx][cy]++;
+	if (dp[cx][cy] != -1) return dp[cx][cy]; // 방문했으면 dp반환
+	else dp[cx][cy]++; 
 
 	for (int i = 0; i < 4; ++i) {
 		int nx = cx + dx[i], ny = cy + dy[i];
