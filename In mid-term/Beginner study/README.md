@@ -30,3 +30,8 @@
 
 **2주차** <br>
 
+- [BOJ 1018](https://www.acmicpc.net/problem/1018)
+- [BOJ 1342](https://www.acmicpc.net/problem/1342)
+- [BOJ 2798](https://www.acmicpc.net/problem/2798)
+- [BOJ 10997](https://www.acmicpc.net/problem/10997)
+- [BOJ 11729](https://www.acmicpc.net/problem/11729)
